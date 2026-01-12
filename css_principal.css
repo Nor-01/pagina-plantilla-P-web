@@ -1,0 +1,119 @@
+:root {
+    --color-primario: rgb(255, 67, 67);  /* Rojo vibrante */
+    --color-secundario: rgb(45, 45, 45); /* Gris claro */
+    --color-Terciario: rgb(208, 208, 208); /* Gris claro */
+    --color-fondo: rgb(245, 245, 240); /* Fondo neutro */
+    --letras-pequeñas:#007185;
+    --letras-precios:#B12704;
+    --letras-puntuacion-reating:#6c757d;
+    --color-estrellas: #FFA41C;
+
+
+}
+body {
+    font-size: 16px; /* Tamaño base, si deseas cambiarlo */
+    background-color: var(--color-fondo);
+}
+
+/* ESTILOS DEL MENU DE NAVEGACION */
+.btn_menu{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+
+}
+
+.btn_menu:hover {
+  background-color: var(--color-primario); /* Cambia el color de fondo */
+  transform: scale(1.05); /* Lo agranda un poco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+
+.btn_menu_otro_componente{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_menu_otro_componente:hover {
+  background-color:var(--color-Terciario); /* Cambia el color de fondo */
+  transform: scale(1.05); /* Lo agranda un poco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+
+.boton_no_clic{
+    pointer-events: none;
+    background-color:  var(--color-primario);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    height:50px;
+    width: 200px;
+}
+
+
+.incono_propio{
+    height:50px;
+    width: 40px;
+    
+}
+
+
+/* Estilos del Contenedor principal del producto */
+.producto-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Imagen */
+.producto-imagen img {
+    max-height: 420px;
+    object-fit: contain;
+}
+
+/* Marca */
+.producto-marca {
+    color: var(--letras-pequeñas);
+    font-size: 0.9rem;
+}
+
+/* Título */
+.producto-titulo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Rating */
+.producto-rating i {
+    color: var(--color-estrellas);
+}
+
+.rating-text {
+    color: var(--letras-puntuacion-reating) ;
+    margin-left: 5px;
+}
+
+/* Precio */
+.producto-precio {
+    color: var(--letras-precios);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Detalles */
+.producto-detalles li {
+    font-size: 0.95rem;
+}
+
+/* Botón */
+.producto-boton {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
