@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <meta name="description" content="Plantilla para tú sitio web. (Personalizar a tú gusto)">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css_principal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+     <!-- menu de navegacion -->
+     <!-- se encuentra responsivo, tiene color de fondo y una altura en el eje de la y de 5 -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+    <!--Esta detro de un conytenedor fluido que pone de lado a lado el menú -->
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5 btn_menu_otro_componente" href="principal.html">Pagina</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-5 " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active btn_menu" aria-current="page" href="principal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active btn_menu" href="sobre_nosotros_final.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active btn_menu" href="pintores.html">Pintores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active btn_menu" href="formando_formulario.html">Formularios</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control ms-3 me-1 btn_menu_otro_componente" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn_menu" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!-- carrusel -->
+ <div id="carouselExampleCaptions" class="carousel slide ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="max-height: 700px;">
+      <img src="Imgs/foto_Principal.jpeg" class="d-block w-100" alt="..."> 
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="max-height: 700px;">
+      <img src="Imgs/foto_Principal.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="max-height: 700px;">
+      <img src="Imgs/foto_Principal.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- botón no clicleable Corrigido -->
+<div class="container text-center mx-auto mt-5 ">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+            <span class="fs-5 fw-bolder boton_no_clic text-center">Nuevos Productos</span>
+        <div class="col">
+            <div class="text-center p-3 d-none d-md-block">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>    
+        </div>
+    </div>
+</div>
+
+<!-- TARGETAS -->
+
+<!-- se puso responsividad de tal forma que el display cuando este en pantallas pequeñas no va a mostarar las targetas
+ en pantalla y para tamañaos mediados se van a mostrar las targetas en forma de bloque-->
+
+ <!-- Trageta 1 -->
+<div class="container d-flex d-md-block mt-4 mb-5 justify-content-center">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+  <img src="Imgs/Inicio/producto1.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nostrum culpa rem ratione fuga quas fugiat recusandae iusto </p>
+    <h5 class="card-title">$0.00</h5>
+        <div class="text-center">
+        	<a href="caracteristicas_producto.html" class="btn btn-primary">Comprar</a>
+    	</div>
+  </div>
+        </div>
+    </div>
+ <!-- Trageta 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+  <img src="Imgs/Inicio/producto2.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nostrum culpa rem ratione fuga quas fugiat recusandae iusto </p>
+    <h5 class="card-title">$0.00</h5>
+        <div class="text-center">
+        	<a href="caracteristicas_producto.html" class="btn btn-primary">Comprar</a>
+    	</div>
+  </div>
+        </div>
+    </div>
+ <!-- Trageta 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+  <img src="Imgs/Inicio/producto3.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nostrum culpa rem ratione fuga quas fugiat recusandae iusto </p>
+    <h5 class="card-title">$0.00</h5>
+    <div class="text-center">
+      <a href="caracteristicas_producto.html" class="btn btn-primary">Comprar</a>
+    </div>
+  </div>
+        </div>
+    </div>
+
+
+     <!-- Trageta 4 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+  <img src="Imgs/Inicio/producto4.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nostrum culpa rem ratione fuga quas fugiat recusandae iusto </p>
+    <h5 class="card-title">$0.00</h5>
+    <div class="text-center">
+      <a href="caracteristicas_producto.html" class="btn btn-primary">Comprar</a>
+    </div>
+  </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Botón y texto separador -->
+<div class="container text-center mx-auto mt-5 ">
+    <div class="row">
+        <div class="col">
+            <span class="fs-5 fw-bolder boton_no_clic text-center">Categorias</span>
+        <div class="col">
+            <div class="text-center p-3 d-none d-md-block">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>    
+        </div>
+    </div>
+</div>
+
+
+ <!-- categorias -->
+   <!-- categoria 1 -->
+<div class="container d-flex d-md-block">
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 p-0 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+                <img src="Imgs/Inicio/cate1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Nombre de la categoria</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- categoria 2 -->
+<div class="col-sm-12 col-md-4 p-0 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+                <img src="Imgs/Inicio/cate2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Nombre de la categoria</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- categoria 3 -->
+<div class="col-sm-12 col-md-4 p-0 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;  ">
+                <img src="Imgs/Inicio/cate3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <p class="card-text fw-bold">Nombre de la categoria</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+</div>
+<!-- Espaciado antes del footer -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <!-- Footer Final de la pagina -->
+    <footer class="bg-light mt-5 border-top">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-4 border-end border-2">
+            <h5 class="fs-5 fw-bolder boton_no_clic">Encuentranos</h5>
+            <div class="mt-3">
+              <h6 class="mb-1">Dirección</h6>
+              <p class="mb-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h6 class="mb-1">Horario</h6>
+              <p class="mb-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 border-end border-2 d-none d-md-block">
+            <h5 class="fs-5 fw-bolder boton_no_clic">Acerca del sitio</h5>
+            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum placeat provident explicabo excepturi ipsam nam laudantium quisquam mollitia minus, animi dolor. Voluptatibus voluptatem quibusdam repudiandae placeat labore odit velit.</p>
+          </div>
+
+          <div class="col-12 col-md-4 ">
+            <h5 class="fs-5 fw-bolder boton_no_clic">Contactos</h5>
+            <div class="mt-3">
+              <h6 class="mb-1">Redes Sociales</h6>
+              <p class="mb-2">This content is a little bit longer.</p>
+              <div class="d-flex gap-2">
+                <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width:44px;height:44px;">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width:44px;height:44px;">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center" style="width:44px;height:44px;">
+                  <i class="bi bi-tiktok fs-5"></i>
+                </a>
+              </div>
+              <p class=" m-0 py-4">&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+ <!-- Java -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Script: hacer clic en la tarjeta redirija al enlace 'Comprar' -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Para cada tarjeta buscamos el enlace interno (el botón "Comprar")
+        document.querySelectorAll('.card').forEach(card => {
+          const link = card.querySelector('a[href]');
+          if (!link) return;
+          // indicar visualmente que la tarjeta es clickable
+          card.style.cursor = 'pointer';
+          // permitir foco y accesibilidad por teclado
+          if (!card.hasAttribute('tabindex')) card.setAttribute('tabindex', '0');
+
+          /*
+            Comportamiento al hacer click en la tarjeta:
+            - Si el clic vino de un enlace dentro de la tarjeta (por ejemplo el propio botón),
+              dejamos que el enlace se comporte normalmente.
+            - Si el clic viene de cualquier otra parte de la tarjeta, abrimos la URL del enlace
+              en una nueva pestaña usando `window.open(url, '_blank')`.
+
+            Notas:
+            - `window.open(url, '_blank')` solicita al navegador abrir una nueva pestaña/ventana
+              según la configuración del usuario. No todos los navegadores abrirán siempre una
+              nueva ventana separada; normalmente abrirán una pestaña.
+            - Por seguridad es buena práctica usar `rel="noopener noreferrer"` cuando se abre
+              una nueva pestaña para evitar que la página abierta tenga acceso a `window.opener`.
+          */
+          card.addEventListener('click', function (e) {
+            // si el clic viene de un enlace dentro de la tarjeta, dejar que el enlace actúe
+            if (e.target.closest('a')) return;
+            // abrir en nueva pestaña via JavaScript
+            window.open(link.getAttribute('href'), '_blank');
+          });
+
+          // permitir abrir con Enter o Space cuando la tarjeta tiene foco
+          card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              window.open(link.getAttribute('href'), '_blank');
+            }
+          });
+        });
+
+        // Además interceptamos explícitamente clicks en los enlaces "Comparar"
+        // para abrirlos por JS (y añadir rel si no está presente).
+        document.querySelectorAll('.card a.btn-primary').forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            // asegurar `rel` por seguridad cuando abrimos en nueva pestaña
+            this.rel = this.rel || 'noopener noreferrer';
+            // abrir en nueva pestaña con JS
+            window.open(this.getAttribute('href'), '_blank');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
